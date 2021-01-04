@@ -27,7 +27,7 @@ class BurpExtender(IBurpExtender, ISessionHandlingAction):
 	 
 	def performAction(self, currentRequest, macroItems):
 		#Update the secret key for HMAC
-		Secret = "THIS-IS-A-SeCRet"
+		Secret = "1"
 
 		stdout = PrintWriter(self._callbacks.getStdout(), True)
 		requestInfo = self._helpers.analyzeRequest(currentRequest)
